@@ -1,0 +1,21 @@
+{
+  "name": "Auto Star Github",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Auto star github repositories.",
+  "icons": {
+    "128": "icon_128.png",
+    "48": "icon_48.png",
+    "16": "icon_16.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_title": "Auto Star Github",
+    "default_icon": "icon_128.png"
+  }
+}
